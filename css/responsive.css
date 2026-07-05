@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+
+    .bottom-container {
+        padding: 0;
+
+    }
+
+    .top-ground {
+        background-image: url(../imgs/top-ground-res.png);
+        background-size: cover;
+        background-position: center;
+        height: 35vh;
+        min-height: auto;
+        padding: 0;
+    }
+
+    .container {
+        margin: 5px;
+    }
+
+    .bottom-ground {
+        background-image: url(../imgs/bottom-ground-res.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: -60px;
+        padding: 0;
+        border-radius: 25px;
+    }
+
+    .bottom-ground .right {
+        display: none;
+    }
+
+    .bottom-ground .left {
+        margin-top: 30px;
+
+    }
+
+    .about-us .container {
+        flex-direction: column-reverse;
+    }
+    .about-us .left .three .boxcard {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+
+    }
+    .about-us .left .three .content {
+            left: 89px;
+            bottom: 40px;
+    }
+
+    .about-us .left {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us .left .two {
+        grid-column: 1;
+        grid-row: 1;
+         width: 335px;
+        height: 234px;
+    }
+
+    .about-us .left .three {
+        grid-column: 1;
+        width: 335px;
+        height: 234px;
+    }
+
+    .about-us .left .one {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
