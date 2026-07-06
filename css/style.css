@@ -46,6 +46,7 @@ section {
     margin: 0 auto;
     width: 100%;
     min-height: 100%;
+    background-color: #FCFDFF;
 }
 
 /* Start Styling*/
@@ -301,7 +302,7 @@ section {
     background-color: #F8F8F8;
     border-radius: 24px;
     position: relative;
-border: 1px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 
 .about-us .left .three .boxcard {
@@ -316,9 +317,9 @@ border: 1px solid #F2F2F2;
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom, #FAF8F599,
-    #FAF8F5 );
+            #FAF8F5);
     z-index: 1;
-        border-radius: 24px;
+    border-radius: 24px;
 
 }
 
@@ -371,4 +372,128 @@ border: 1px solid #F2F2F2;
     color: #011912;
     padding-top: 13px;
 
+}
+
+/* ******************  information section ******************  */
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.information .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.information .heading h4 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+}
+
+.information .heading p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+.information .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    padding: 50px 0 0 0;
+}
+
+.information .container .one {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.information .container .two {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.information .container .center {
+    grid-row: 1 / span3;
+    grid-column: 2;
+}
+
+.information .container .three {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.information .container .four {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.information .box {
+    width: 311px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30.54px;
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.information .box h3 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #011912;
+}
+
+.information .box p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    opacity: .5;
+    color: #011912;
+    width: 236px;
+    height: 56px;
+}
+
+.information .bottom-heading h4 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    color: #666666;
+}
+.information .bottom-heading button{
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: linear-gradient(to right bottom,#00FF87 , #60A5FA);
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    /* border: 1px solid;
+      border-image:  linear-gradient(to right bottom,#00FF87 , #60A5FA) 1; */
 }

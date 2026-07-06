@@ -42,14 +42,16 @@
     .about-us .container {
         flex-direction: column-reverse;
     }
+
     .about-us .left .three .boxcard {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
 
     }
+
     .about-us .left .three .content {
-            left: 89px;
-            bottom: 40px;
+        left: 89px;
+        bottom: 40px;
     }
 
     .about-us .left {
@@ -59,7 +61,7 @@
     .about-us .left .two {
         grid-column: 1;
         grid-row: 1;
-         width: 335px;
+        width: 335px;
         height: 234px;
     }
 
@@ -73,5 +75,59 @@
         grid-column: 1;
         grid-row: 3;
     }
+
+    /* ******************  information section ******************  */
+    .information {
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .information .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .information .container .center {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    .information .center img {
+        width: 358px;
+        height: 453px;
+        margin: 0 auto;
+    }
+
+    .information .container .one {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .information .container .two {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .information .container .three {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .information .container .four {
+        grid-row: 2;
+        grid-column: 4;
+    }
+
+    .information .box {
+        width: 236px;
+        height: 292px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+
 
 }
