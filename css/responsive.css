@@ -127,7 +127,24 @@
         padding-bottom: 12px;
         padding-top: 12px;
     }
+    /* ******************  testimonials section ******************  */
 
+    .testimonials{
+        overflow:hidden;
+    }
 
+    .testimonials .container{
+        display:flex;
+        gap:16px;
+        transform:translateX(125px);
+    }
+
+    .testimonials .box{
+        width:90vw;
+        flex-shrink:0;
+    }
+.testimonials .box .top {
+gap: 5px;
+}
 
 }

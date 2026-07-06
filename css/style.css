@@ -42,7 +42,7 @@ a {
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 0 auto;
     width: 100%;
     min-height: 100%;
@@ -375,14 +375,16 @@ section {
 }
 
 /* ******************  information section ******************  */
-.information{
+.information {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
-.information .heading {
+
+.information .heading,
+.testimonials .heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,16 +393,19 @@ section {
 
 }
 
-.information .heading h4 {
+.information .heading h4,
+.testimonials .heading h4 {
     font-weight: 400;
     font-style: Regular;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0%;
+    color: #666666;
 
 }
 
-.information .heading p {
+.information .heading p,
+.testimonials .heading p {
     font-weight: 500;
     font-style: Medium;
     font-size: 28px;
@@ -484,16 +489,112 @@ section {
     font-size: 20px;
     color: #666666;
 }
-.information .bottom-heading button{
+
+.information .bottom-heading button {
     display: flex;
     gap: 12px;
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    background: linear-gradient(to right bottom,#00FF87 , #60A5FA);
+    background: linear-gradient(to right bottom, #00FF87, #60A5FA);
     height: 50px;
     border-radius: 50px;
     border: none;
     /* border: 1px solid;
       border-image:  linear-gradient(to right bottom,#00FF87 , #60A5FA) 1; */
+}
+
+/* ****************** testimonials section ****************** */
+.testimonials {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.testimonials .container {
+    display: grid;
+    grid-template-columns:
+        minmax(350px, 1fr) minmax(470px, 1.2fr) minmax(350px, .8fr) minmax(350px, 1fr);
+    gap: 20px;
+    margin: 0;
+    padding-top: 35px;
+    width: calc(100% + 200px);
+    margin-left: -110px;
+}
+
+.testimonials .box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 24px;
+    border-radius: 16px;
+    border-width: 1px solid #F3F4F6;
+    min-height: 242px;
+    height: auto;
+}
+
+.testimonials .box .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.testimonials .box .top .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonials .box .top .right img {
+    border-radius: 50%;
+}
+
+.testimonials .box .top .right p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111827;
+}
+
+.testimonials .box .top .right span {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.testimonials .box .top .right p {
+    text-align: right;
+}
+
+.testimonials .box .bottom {
+    text-align: right;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: #011912;
+}
+
+/* .testimonials .one,
+.testimonials .five {
+    transform: translateX(-50px);
+}
+
+.testimonials .four,
+.testimonials .eight {
+    transform: translateX(50px);
+} */
+
+.testimonials .three,
+.testimonials .seven {
+    margin-top: 30px;
+    /* padding-bottom: 20px;
+    padding-left :30px;
+    padding-right: 30px; */
+
 }
