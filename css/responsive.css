@@ -5,7 +5,6 @@
 
     .bottom-container {
         padding: 0;
-
     }
 
     .top-ground {
@@ -17,15 +16,11 @@
         padding: 0;
     }
 
-    .container {
-        margin: 5px;
-    }
-
     .bottom-ground {
         background-image: url(../imgs/bottom-ground-res.png);
         background-size: cover;
         background-position: center;
-        margin-top: -60px;
+        margin-top: -70px;
         padding: 0;
         border-radius: 25px;
     }
@@ -84,7 +79,7 @@
 
     .information .container {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto auto;
         gap: 10px;
         margin: 0 auto;
     }
@@ -127,24 +122,78 @@
         padding-bottom: 12px;
         padding-top: 12px;
     }
+
     /* ******************  testimonials section ******************  */
 
-    .testimonials{
-        overflow:hidden;
+    .testimonials {
+        overflow: hidden;
+        padding: 40px;
+        margin: 0 auto;
     }
 
-    .testimonials .container{
-        display:flex;
-        gap:16px;
-        transform:translateX(125px);
+    .testimonials .heading p {
+        font-size: 18px;
+        width: 341px;
     }
 
-    .testimonials .box{
-        width:90vw;
-        flex-shrink:0;
+    .testimonials .container {
+        display: flex;
+        gap: 16px;
+        transform: translateX(90px);
     }
-.testimonials .box .top {
-gap: 5px;
+
+    .testimonials .box {
+        width: 90vw;
+        flex-shrink: 0;
+    }
+
+    .testimonials .box .top {
+        gap: 5px;
+    }
+
+    /* ******************  footer ******************  */
+   footer .player-img{
+    top: 185px;
+   }
+    footer .player-img img{
+        width: 268px;
+        height: 276px;
+    }
+    footer .center {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 60px 0 60px;
+        gap: 30px;
+    }
+
+    footer .center>div {
+        height: 202px;
+        max-width: 157px;
+    }
+
+    footer .content {
+        margin: 0 0 20px 0;
+        padding: 120px 20px 60px;
+    }
+
+    footer .top p {
+        font-size: 24px;
+    }
+
+    footer .subscribe-field {
+        width: 320px;
+    }
+footer .center p {
+    font-weight: 400;
 }
+    footer .center .four h2 {
+        font-size: 16px;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 
 }
