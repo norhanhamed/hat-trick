@@ -1,10 +1,57 @@
 @media screen and (max-width: 768px) {
+
     .container {
         margin: 0;
     }
 
+    /* ****************** top-ground ****************** */
+    header {
+        padding: 20px;
+        border-bottom: 1px solid #F2F2F2;
+        background-color: white;
+
+    }
+
+    header .menuebar {
+        display: block;
+    }
+
+    header .login {
+        display: none;
+
+    }
+
+    header nav .closebar {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
     .bottom-container {
         padding: 0;
+    }
+
+    .main-section .heading {
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 0;
+    margin-top: -20px;
+    margin-bottom: 15px;
+
+
+    }
+
+    .main-section .heading h1,
+    .main-section .heading h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-section .heading h2 {
+        font-size: 23px;
+
     }
 
     .top-ground {
@@ -131,6 +178,11 @@
         margin: 0 auto;
     }
 
+    .testimonials .container {
+        padding-bottom: 0;
+
+    }
+
     .testimonials .heading p {
         font-size: 18px;
         width: 341px;
@@ -151,14 +203,31 @@
         gap: 5px;
     }
 
+    .testimonials .three,
+    .testimonials .seven {
+        transform: translateY(0);
+    }
+
     /* ******************  footer ******************  */
-   footer .player-img{
-    top: 185px;
-   }
-    footer .player-img img{
+    footer {
+        padding-top: 110px;
+    }
+
+    footer .player-img {
+        top: 185px;
+    }
+
+    footer .player-img {
+        top: 0;
+        left: 0;
+    }
+
+    footer .player-img img {
         width: 268px;
         height: 276px;
+
     }
+
     footer .center {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -172,7 +241,7 @@
     }
 
     footer .content {
-        margin: 0 0 20px 0;
+        margin: 0 0 40px 0;
         padding: 120px 20px 60px;
     }
 
@@ -183,9 +252,11 @@
     footer .subscribe-field {
         width: 320px;
     }
-footer .center p {
-    font-weight: 400;
-}
+
+    footer .center p {
+        font-weight: 400;
+    }
+
     footer .center .four h2 {
         font-size: 16px;
     }

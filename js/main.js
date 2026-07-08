@@ -1,15 +1,11 @@
 
 
-// const boxcard = document.getElementById("boxcard");
-// const count = window.innerWidth <= 768 ? 12 : 9;
+// menue bar
 
+const menuebar = document.getElementById("menuebar");
+menuebar.addEventListener("click" , ()=>{
 
-// for( let i =0 ; i < count ; i++){
-//     const img = document.createElement("img");
-//     img.src = './imgs/about-us-3.png';
-//     img.alt= "user";
-//     boxcard.appendChild(img);
-// }
+})
 
 
 

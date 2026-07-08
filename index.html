@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HatTrick</title>
+    <!-- fontawesome lib -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -12,12 +14,39 @@
 <body>
     <!-- header-->
     <header>
+        <div class="menuebar" id="menuebar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="login"><!-- login button-->
+            <img src="imgs/black ball.png" alt="blackball">
+            <button>انضم الينا</button>
+        </div>
 
+        <nav><!-- navigation-->
+            <ul>
+                <li> <a href="#testimonials">الاسئلة الشائعه</a> </li>
+                <li> <a href="#information">المميزات</a></li>
+                <li> <a href="#footer">اتصل بنا </a></li>
+                <li> <a href="#aboutUs">من نحن </a></li>
+                <li><a href="#">الرئيسية</a></li>
+            </ul>
+            <div class="closebar"><!-- closebar -->
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+        <div class="logo"><!--logo-->
+            <h3>HAT-TRICK</h3>
+            <img src="imgs/logo.png" alt="logo">
+        </div>
     </header>
     <!-- main coding-->
     <main>
-        <section> <!--top ground section-->
+        <section class="main-section"> <!--top ground section-->
             <div class="container">
+                <div class="heading">
+                    <h1>hat- <span>trick</span></h1>
+                    <h2>حوّل موهبتك لفرصة حقيقية</h2>
+                </div>
                 <div class="top-ground"></div>
             </div>
         </section>
@@ -42,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us"><!-- about-us section -->
+        <section class="about-us" id="aboutUs"><!-- about-us section -->
             <div class="container">
                 <div class="left">
                     <div class="one">
@@ -85,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section class="information"><!-- information section-->
+        <section class="information" id="information"><!-- information section-->
             <div class="heading">
                 <h4>مميزاتنا ⚽ </h4>
                 <p>لماذا تختار منصتنا</p>
@@ -123,7 +152,7 @@
                 </button>
             </div>
         </section>
-        <section class="testimonials"><!-- testimonials section-->
+        <section class="testimonials" id="testimonials"><!-- testimonials section-->
             <div class="heading">
                 <h4>ماذا يقول المستخدمون ⚽ </h4>
                 <p>آراء وتجارب حقيقية من مستخدمي المنصة</p>
@@ -283,7 +312,7 @@
                 </div>
             </div>
         </section>
-        <footer><!-- footer -->
+        <footer id="footer"><!-- footer -->
             <div class="player-img">
                 <img src="imgs/player.png" alt="player">
             </div>
