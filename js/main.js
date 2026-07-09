@@ -1,14 +1,34 @@
+//toggle mobile menue visibity
+const menuBar = document.getElementById("menuebar");
+const nav = document.getElementById("nav");
+const closeBar = document.querySelector(".closebar");
 
 
-// menue bar
+menuBar.addEventListener("click", () => {
+    nav.classList.add("active");
+});
 
-const menuebar = document.getElementById("menuebar");
-menuebar.addEventListener("click" , ()=>{
+closeBar.addEventListener("click", () => {
+    nav.classList.remove("active");
+});
 
-})
+const links = document.querySelectorAll("#nav a");
+links.forEach(link =>{
+    link.addEventListener("click" ,()=>{
+        nav.classList.remove("active")
+    });
+});
 
 
 
+
+
+
+
+
+
+
+// cards for about us section
 const boxcard = document.getElementById("boxcard");
 
 function createImages() {
